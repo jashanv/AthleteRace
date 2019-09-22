@@ -11,7 +11,7 @@ namespace AthleteRace
         public int BetAmount { get; set; }
         public Bettor bettor { get; set; }
         public int car { get; set; }
-        public int multiplier = 4;
+        public int multiplier = 1;
 
         public int Payout(int WinningAthlete)
         {

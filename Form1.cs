@@ -24,9 +24,10 @@ namespace AthleteRace
             Data.athletes[3] = new Athlete() { AthletePicture = Athlete4, finishingPosition = RaceTrackLength, startingPosition = StartRace };
             Data.athletes[4] = new Athlete() { AthletePicture = Athlete5, finishingPosition = RaceTrackLength, startingPosition = StartRace };
 
-            Data.bettors[0] = new Bettor() { balance = 65, activityLabel = label4, bettorsList = radioButton1, name = "Player 1" };
-            Data.bettors[1] = new Bettor() { balance = 75, activityLabel = label5, bettorsList = radioButton2, name = "Player 2" };
-            Data.bettors[2] = new Bettor() { balance = 55, activityLabel = label6, bettorsList = radioButton3, name = "Player 3" };
+            Data.bettors[0] = new Bettor() { balance = 50, activityLabel = label4, bettorsList = radioButton1, name = "Player 1" };
+            Data.bettors[1] = new Bettor() { balance = 50, activityLabel = label5, bettorsList = radioButton2, name = "Player 2" };
+            Data.bettors[2] = new Bettor() { balance = 50
+                , activityLabel = label6, bettorsList = radioButton3, name = "Player 3" };
 
             // Sets the default values to the labels
             Data.bettors[0].UpdateActivityLabels();
@@ -105,6 +106,11 @@ namespace AthleteRace
         private void RadioButton3_CheckedChanged(object sender, EventArgs e)
         {
             Data.CurrentGambler = 2;
+        }
+
+        private void RaceTrack_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

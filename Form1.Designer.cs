@@ -77,6 +77,7 @@
             this.RaceTrack.Size = new System.Drawing.Size(845, 580);
             this.RaceTrack.TabIndex = 0;
             this.RaceTrack.TabStop = false;
+            this.RaceTrack.Click += new System.EventHandler(this.RaceTrack_Click);
             // 
             // playersLabel
             // 
@@ -165,19 +166,14 @@
             // numericUpDown1
             // 
             this.numericUpDown1.Location = new System.Drawing.Point(954, 142);
-            this.numericUpDown1.Minimum = new decimal(new int[] {
-            50,
+            this.numericUpDown1.Maximum = new decimal(new int[] {
+            10000000,
             0,
             0,
             0});
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(94, 20);
             this.numericUpDown1.TabIndex = 9;
-            this.numericUpDown1.Value = new decimal(new int[] {
-            50,
-            0,
-            0,
-            0});
             // 
             // label3
             // 
@@ -193,7 +189,7 @@
             // 
             this.numericUpDown2.Location = new System.Drawing.Point(954, 169);
             this.numericUpDown2.Maximum = new decimal(new int[] {
-            4,
+            5,
             0,
             0,
             0});
